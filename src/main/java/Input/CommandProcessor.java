@@ -1,6 +1,7 @@
 package Input;
 
 import BL.DishService;
+import Classes.Dish;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +22,22 @@ public class CommandProcessor
             case "create" ->
             {
                 dishService.createDish(Long.valueOf(cmd[1]), Double.valueOf(cmd[2]), cmd[3]);
-                System.out.println("Пользователь успешно добавлен...");
+                System.out.println("Блюдо успешно добавлено.");
+            }
+            case "update" ->
+            {
+                dishService.updateCost(Long.valueOf(cmd[1]), Double.valueOf(cmd[2]));
+                System.out.println("Стоимость успешно обновлена.");
+            }
+            case "delete" ->
+            {
+                dishService.deleteById(Long.valueOf(cmd[1]));
+                System.out.println("Блюдо успешно удалено.");
+            }
+            case "findById" ->
+            {
+                Dish dish = dishService.findById(Long.valueOf(cmd[1]));
+                System.out.println(dish);
             }
 // …. здесь логика Обработки других команды
             default -> System.out.println("Введена неизвестная команда...");
