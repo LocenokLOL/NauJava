@@ -1,4 +1,4 @@
-package Crud;
+package ru.ChernomortsevEgor.NauJava.Crud;
 
 public interface Crud<T, ID>
 {

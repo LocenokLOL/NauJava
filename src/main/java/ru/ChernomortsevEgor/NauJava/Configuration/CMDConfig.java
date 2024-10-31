@@ -1,7 +1,8 @@
-package Input;
+package ru.ChernomortsevEgor.NauJava.Configuration;
 
 import java.util.Scanner;
 
+import ru.ChernomortsevEgor.NauJava.Input.CommandProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -9,9 +10,11 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-public class Config {
+public class CMDConfig {
+
     @Autowired
     private CommandProcessor commandProcessor;
+
     @Bean
     public CommandLineRunner commandScanner()
     {
@@ -19,7 +22,6 @@ public class Config {
         {
             try (Scanner scanner = new Scanner(System.in))
             {
-                System.out.println("Введите команду. 'exit' для выхода.");
                 while (true)
                 {
                     System.out.print("> ");

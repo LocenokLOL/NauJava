@@ -1,4 +1,4 @@
-package Classes;
+package ru.ChernomortsevEgor.NauJava.Classes;
 
 public class Dish {
     private Long id;

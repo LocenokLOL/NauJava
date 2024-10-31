@@ -1,9 +1,9 @@
-package Configuration;
+package ru.ChernomortsevEgor.NauJava.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Classes.Dish;
+import ru.ChernomortsevEgor.NauJava.Classes.Dish;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

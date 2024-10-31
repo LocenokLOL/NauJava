@@ -1,6 +1,6 @@
-package BL;
+package ru.ChernomortsevEgor.NauJava.BL;
 
-import Classes.Dish;
+import ru.ChernomortsevEgor.NauJava.Classes.Dish;
 
 public interface DishService {
         void createDish(Long id,Double cost, String name);

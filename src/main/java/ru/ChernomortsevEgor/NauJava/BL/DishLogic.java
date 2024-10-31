@@ -1,7 +1,7 @@
-package BL;
+package ru.ChernomortsevEgor.NauJava.BL;
 
-import Classes.Dish;
-import Crud.DishCrud;
+import ru.ChernomortsevEgor.NauJava.Classes.Dish;
+import ru.ChernomortsevEgor.NauJava.Crud.DishCrud;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

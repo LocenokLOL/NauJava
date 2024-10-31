@@ -1,8 +1,7 @@
-package Crud;
+package ru.ChernomortsevEgor.NauJava.Crud;
 import java.util.List;
-import java.util.Optional;
 
-import Classes.Dish;
+import ru.ChernomortsevEgor.NauJava.Classes.Dish;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

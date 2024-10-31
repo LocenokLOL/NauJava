@@ -1,7 +1,7 @@
-package Input;
+package ru.ChernomortsevEgor.NauJava.Input;
 
-import BL.DishService;
-import Classes.Dish;
+import ru.ChernomortsevEgor.NauJava.BL.DishService;
+import ru.ChernomortsevEgor.NauJava.Classes.Dish;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,11 +9,13 @@ import org.springframework.stereotype.Component;
 public class CommandProcessor
 {
     private final DishService dishService;
+
     @Autowired
     public CommandProcessor(DishService dishService)
     {
         this.dishService = dishService;
     }
+
     public void processCommand(String input)
     {
         String[] cmd = input.split(" ");
